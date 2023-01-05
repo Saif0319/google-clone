@@ -1,0 +1,91 @@
+.results-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;    
+}
+
+.results-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    margin: 6px;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    margin-top: 20px;
+}
+
+.results-google-logo {
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 28px;
+    cursor: pointer;
+}
+
+
+/* Result types */
+.result-type-container {
+    width: 100%;
+    margin-top: 90px;
+    border-bottom: 1px solid rgba(223, 223, 223, 0.155);
+    position: relative;
+}
+
+.result-type {
+    width: 580px;
+    margin-left: 200px;
+    padding-bottom: 10px;
+}
+
+.result-type a {
+    padding: 17px 12px 11px 10px;
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+.result-type a:hover {
+    color: #8ab4f8;
+}
+
+
+
+
+/* Result links */
+.result-links-container {
+    margin-left: 200px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.result-links {
+    margin-bottom: 30px;
+    width: 650px;
+}
+
+.result-links a {
+    padding: 12px 6px 4px 0;
+    color: #8aB4F8;
+    text-decoration: none;
+}
+
+.result-links a:visited {
+    color: #c58aF9;
+}
+
+.result-links a:hover {
+    text-decoration: underline;
+}
+
+.result-links p {
+    margin-top: 10px;
+}
+
+.link {
+    display: block;
+    margin: 0 0 7px 0;
+    color: #BDC1C6;
+}

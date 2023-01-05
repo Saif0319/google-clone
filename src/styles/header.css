@@ -1,0 +1,91 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    margin: 6px;
+}
+
+.navbar .link {
+    text-decoration: none;
+    color: var(--darkFont);
+    padding: 0 0 0 15px;
+    font-size: 0.875rem;
+}
+
+.navbar .link:hover {
+    text-decoration: underline;
+}
+
+.left-side, .right-side {
+    margin-top: 12px;
+    display: flex;
+}
+
+.right-side {
+    display: flex;
+    padding: 0 4px 0 32px;
+    text-align: center;
+}
+
+.right-links {
+    padding: 0 15px 0 0;
+    padding: 4px;
+    margin-right: 120px;
+    display: flex;
+}
+
+.right-links .link:nth-child(1), .right-links .link:nth-child(2) {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.icons {
+    margin-right: 5px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MdApps {
+    font-size: 2.2rem;
+    padding: 4px;
+    margin: 0 15px;
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+    box-sizing: border-box;
+    color: whitesmoke;
+}
+
+.MdApps:hover {
+    border: 0px solid black;
+    border-radius: 50%;
+    background-color: rgba(132, 132, 132, 0.190);
+}
+
+.CgProfile {
+    font-size: 2.45rem;
+    padding: 4px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    box-sizing: border-box;
+    color: whitesmoke;
+
+}
+
+.CgProfile:hover {
+    border: 0px solid black;
+    border-radius: 50%;
+    background-color: rgba(132, 132, 132, 0.190);
+}
+
+
+@media screen and (max-width: 600px) {
+    .navbar {
+      margin-bottom: 25px;
+    }
+}

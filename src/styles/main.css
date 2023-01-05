@@ -1,0 +1,156 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 5px;
+}
+
+.searchBar-container {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.searchBar-container2 {
+    position: relative;
+    width: 580px;
+}
+
+.searchBar {
+    width: 100%;
+    background-color: var(--background);
+    border: 1px solid #5f6368;
+    border-radius: 24px;
+    height: 40px;
+    position: relative;
+    color: whitesmoke;
+    text-indent: 45px;
+    font-size: 16px;
+}
+
+.searchBar:hover {
+    background-color: #303134;
+    border-color: #303134;
+}
+
+.searchBar:focus {
+    outline: none;
+    background-color: #303134;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.AiOutlineSearch {
+    font-size: 1.2em;
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    color:#a7a7a7
+}
+
+.RxCross2 {
+    position: absolute;
+    right: 15%;
+    top: 12px;
+    font-size: 1.4em;
+    padding: 0 15px;
+    border-right: 1px solid #9898988b;
+    cursor: pointer;
+}
+
+.MdKeyboardVoice {
+    position: absolute;
+    right: 9.5%;
+    top: 10px;
+    font-size: 1.55em;
+    cursor: pointer;
+}
+
+.AiFillCamera {
+    position: absolute;
+    right: 3%;
+    top: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.buttons-container {
+    padding: 18px 0 0;
+}
+
+button {
+    padding: 10px 17px;
+    margin: 10px 6px;
+    background-color: #303134;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    box-sizing: border-box;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #373737;
+}
+
+.lang-container {
+    width: 99%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex: 262px 0 0;
+}
+
+.google-lang {
+    margin-top: 0;
+    font-size: 0.8rem;
+}
+
+.google-lang a {
+    text-decoration: none;
+    color: #8ab4F8;
+    padding: 0 3px;
+}
+
+.google-lang a:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 615px) {
+    .gif {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+    }
+
+    .gif img {
+        width: 100%;
+    }
+
+    .searchBar-container2 {
+        width: 90vw;
+    }
+    
+    .MdKeyboardVoice {
+        right: 11.5%;
+    }
+
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer div {
+        padding-bottom: 7px;
+    }
+}

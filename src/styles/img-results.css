@@ -1,0 +1,26 @@
+.result-img-container {
+    margin: 25px 0 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.result-img {
+    margin: 10px 20px;
+}
+
+.result-img img {
+    border-radius: 10px;
+    size: 100px;
+}
+
+.result-type-container a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.result-type-container a:hover {
+    color: #8ab4f8;
+    text-decoration: none;
+}
