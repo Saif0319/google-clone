@@ -89,3 +89,14 @@
     margin: 0 0 7px 0;
     color: #BDC1C6;
 }
+
+.pagination {
+    display: flex;
+    align-items: center;
+    margin-left: 25%;
+    padding-bottom: 5%;
+}
+
+.active-page {
+    outline: 1px solid lime;
+}

@@ -13,14 +13,15 @@ const ResultProvider = ({children}) => {
     const [imgResult, setImgResult] = useState("")
     const [newsResult, setNewsResult] = useState("")
     const [loading, setLoading] = useState(false)
-
+    const [currentPage, setCurrentPage] = useState(2)
+    const [postsPerPage] = useState(15)
 
 
 
 
     //All
 
-    const baseURL = `https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/Search/WebSearchAPI?q=${searchTerm}&pageNumber=1&pageSize=15&autoCorrect=true`
+    const baseURL = `https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/Search/WebSearchAPI?q=${searchTerm}&pageNumber=${currentPage}&pageSize=${postsPerPage}&autoCorrect=true`
 
     
     const getResult = async () => {
@@ -35,6 +36,7 @@ const ResultProvider = ({children}) => {
         })
 
         const data = await response.data
+        console.log(currentPage)
         setResult(data)
         console.log(data)
         setLoading(false)
@@ -91,7 +93,7 @@ const ResultProvider = ({children}) => {
 
   return (
     <ResultContext.Provider value={{getResult, result, loading, searchTerm, setSearchTerm, 
-        imgResult, getImgResult, newsResult, getNewsResult}}>
+        imgResult, getImgResult, newsResult, getNewsResult, currentPage, setCurrentPage}}>
             
         {children}
     </ResultContext.Provider>

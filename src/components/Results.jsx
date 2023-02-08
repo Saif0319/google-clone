@@ -17,11 +17,11 @@ import { FcSearch } from "react-icons/fc"
 
 const Results = () => {
     
-    const { getResult, result, loading, searchTerm, setSearchTerm } = useResult()
+    const { getResult, result, loading, searchTerm, setSearchTerm, setCurrentPage, currentPage } = useResult()
 
     useEffect(() => {
         getResult()
-    }, [searchTerm])
+    }, [searchTerm, currentPage])
 
 
 
@@ -97,6 +97,21 @@ const Results = () => {
         })}
 
       </div>
+      
+      <nav className="pagination">
+        <button onClick={() => setCurrentPage(currentPage - 1)}>&lt;</button>
+        <button onClick={() => setCurrentPage(1)}>1</button>
+        <button onClick={() => setCurrentPage(2)}>2</button>
+        <button onClick={() => setCurrentPage(3)}>3</button>
+        <button onClick={() => setCurrentPage(4)}>4</button>
+        <button onClick={() => setCurrentPage(5)}>5</button>
+        <button onClick={() => setCurrentPage(6)}>6</button>
+        <button onClick={() => setCurrentPage(7)}>7</button>
+        <button onClick={() => setCurrentPage(8)}>8</button>
+        <button onClick={() => setCurrentPage(9)}>9</button>
+        <button onClick={() => setCurrentPage(10)}>10</button>
+        <button onClick={() => setCurrentPage(currentPage + 1)}>&gt;</button>
+      </nav>
         
        
     </div>
