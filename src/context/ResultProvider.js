@@ -13,7 +13,7 @@ const ResultProvider = ({children}) => {
     const [imgResult, setImgResult] = useState("")
     const [newsResult, setNewsResult] = useState("")
     const [loading, setLoading] = useState(false)
-    const [currentPage, setCurrentPage] = useState(2)
+    const [currentPage, setCurrentPage] = useState(1)
     const [postsPerPage] = useState(15)
 
 
